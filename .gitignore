@@ -177,3 +177,11 @@ cython_debug/
 *.sqlite3
 =======
 bookstore/settings.py
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+
+# Ignore Django migration cache
+salespersons/migrations/__pycache__/
+salespersons/migrations/*.pyc
