@@ -1,0 +1,21 @@
+{% load static %}
+
+<head>
+  <title>Bookstore Home</title>
+  <link rel="stylesheet" href="static/styles.css">
+  <script src="{% static 'sales/js/home.js' %}" defer></script>
+</head>
+
+<body>
+  <h1 style="text-align:center">Welcome to our Bookstore</h1>
+  <br>
+  <br>
+  {% comment %} the {% url %} tag tells Django to load the URL with the
+  name "login" when the user clicks on the text: "Login" {% endcomment %}
+  <a href="{% url 'login' %}">Login</a>
+  <br>
+  <br>
+  <br>
+  <!-- Here, sales/images specifies the location of the static content (where the image should be loaded from), and the bookstore.jpg is the image name -->
+  <img src="{% static 'sales/images/bookstore.jpg' %}" alt="home" width="600" height="300">
+</body>
