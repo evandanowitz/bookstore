@@ -30,8 +30,7 @@ DEBUG = False
 # For development
 # DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['polar-tor-36075-d41c613b9af4.herokuapp.com']
 
 # Application definition
 
